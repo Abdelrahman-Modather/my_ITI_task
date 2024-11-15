@@ -8,30 +8,21 @@ body {
 }
 
 header {
-    background-color: #23272a;
+    background-color: #222629;
     color: white;
     display: flex;
-    
     align-items: center;
+    justify-content: center;
+    gap: 70px;
     padding: 10px 20px;
-}
-header {
-    display: flex;
-    align-items: center;
-    gap: 1px;
 }
 
 header svg {
-    display: block; 
+    display: block;
 }
 
 header h1 {
-    margin: 0; /* Removes default heading margin */
-}
-
-
-header img {
-    height: 40px;
+    margin: 0;
 }
 
 nav ul {
@@ -39,42 +30,332 @@ nav ul {
     display: flex;
     gap: 20px;
 }
-
-main {
-    display: grid;
-    grid-template-columns: 200px 1fr;
+nav ul li{
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1180px;
+    min-height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
 }
-
-aside {
-    background-color: #2c2f33;
+nav ul li a{
     color: white;
-    padding: 20px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.login-button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222629;
+    color: white;
+    padding: 100px 10%;
+    gap: 0px;
+    height: fit-content;
 }
 
-section {
-    padding: 20px;
+.hero-text {
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-section header {
-    font-size: 24px;
+.hero h1 {
+    font-family: 'ABC Ginto Nord Condensed Unlicensed Trial', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 25px;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.cta-button1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #5764f2;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    width: fit-content;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.cta-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cta-note {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.hero-image img {
+    left: 10%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* .download-item {
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    padding: 20px;
+    width: 200px;
+} */
+.main{
+    width: 100%;
+}
+.download-container{
+    margin: 0 auto;
+    width: 60%;
+    
+}
+.download-item h2 {
+    font-family: 'ABC Ginto Nord Normal Unlicensed Trial', sans-serif;
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    
+}
+
+.download-item .cta-button {
+    background-color: black;
+    color: white;
+    padding: 12px 32px 15px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.download-item .cta-button:hover {
+    background-color: #5b6eae;
+}
+
+.download-item .download-image {
+    height: auto;
+    border-radius: 8px;
+}
+
+.download-item{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    padding: 10px 20px;
+
+}
+.download-section{
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 160px 420px 160px 420px 160px 420px;
+    gap: 20px;
+    
+    /* max-width: 90%; */
+    margin-top: 120px;
+}
+.word{
+    font-family: 'ABC Ginto Nord Condensed Unlicensed Trial', sans-serif;
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 50px;
+    padding-bottom:10px;
+}
+.ios{
+    grid-area: 1/1/3/2;
+
+}
+.and{
+    grid-area: 2/2/4/3;
+    
+}
+.linux{
+    grid-area: 3/1/5/2;
+    
+}
+.mac{
+    grid-area: 4/2/6/3;
+    
+}
+
+.cta-button { 
+    background-color: #222629; 
+    color: white; 
+    font-family: "Funnel Sans", sans-serif; 
+    font-size: 20px; 
+    padding: 15px 30px; 
+    border-radius: 50px; 
+    margin: 0; 
+    margin-bottom: 50px; 
+    display: flex; 
+    align-items: center;
+    gap: 10px;
+    border: none;
+    cursor: pointer;
+    }
+.experimental {
+    padding: 50px 20px 20px 40px; /* Add space on the left */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    align-items: flex-start; /* Keep horizontal alignment the same */
+    grid-area: 5/1/7/2;
+    background-color: #f5f5f5;
+    text-align: left;
+    max-height: 200px; /* Decrease the height */
+    overflow: hidden; /* Hide overflow content */
+}
+
+
+
+
+.experimental h2{
+    font-size: 32px;
+    color: black;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.cta-button svg { 
+    fill: white;
+    width: 24px;
+    height: 24px;
+    }
+.experimental .cta-button:hover {
+    background-color: #5b6eae;
+}
+
+.tabana{
+    font-size:20px;
+}
+
+footer {
+    background-color: #2C2F33;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 100%;
+}
+
+.footer-section {
+    margin-right: 40px;
+}
+
+.footer-section-header {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
     margin-bottom: 10px;
 }
 
-.messages {
-    background-color: #23272a;
-    color: white;
-    padding: 10px;
-    height: 300px;
-    overflow-y: scroll;
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    font-size: 18px;
 }
 
-input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
+.footer-section a:hover {
+    color: #007bff;
 }
-
 #logtext {
     color: white;
-    /* margin-right: 290px; */
 }
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+}
+hr{
+    color: #5764f2;
+    size: 0.5px;
+    margin: 0rem 10rem 0rem 10rem;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 170px;
+}
+.footer-section-header {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #5764f2;
+}
+
+.footer-section {
+    margin-right: 40px;
+    align-self: flex-start;
+}
+
+.footer-section:last-child { 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-right: 0;
+}
+  
+.logos-footer {
+    display: flex;
+    gap: 10px;
+}
+.imglogo{
+    transform: translate(0, -150px);
+}
+  .sign-up {
+    list-style: none;
+    padding: 0;
+    margin-left: auto;
+  }
+  
+  .sign-up button {
+    background-color: #5764f2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-right: 170px;
+  }
