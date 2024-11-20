@@ -137,3 +137,67 @@ a:visited{
   color: white;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+
+.nitro-container {
+  position: relative;
+  top: -600px; /* Adjust this value as needed to move it up */
+  width: 100%;
+  background-color: transparent;
+}
+
+.flexing {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: transparent;
+}
+
+.right-nitro, .left-nitro {
+  flex: 1.5;
+  padding: 40px;
+  width: 35rem; /* Ensure proper width */
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  position: relative;
+}
+
+.right-nitro h1, .left-nitro h1,
+.right-nitro p, .left-nitro p {
+  font-family: 'ABC Ginto Nord Condensed Unlicensed Trial', sans-serif;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.right-nitro h1, .left-nitro h1{
+  font-style: italic;
+}
+.right-nitro {
+  margin-right: 20px;
+  background: linear-gradient(to bottom left, #007bc2, #5767f2); /* Retain gradient */
+}
+
+.left-nitro {
+  margin-left: 20px;
+  background: linear-gradient(to bottom right, #8548c7, #b0569b); /* Retain gradient */
+}
+
+.right-nitro button, .left-nitro button {
+  margin-top: auto; 
+  background-color: white;
+  color: black;
+  width: 500px;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  align-self: center; 
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.right-nitro button:hover, .left-nitro button:hover {
+  background-color: #4752c4;
+}
